@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 DOM part2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DOM PART 2</h1>
+    <h3>Attributes</h3>
+    <ul>
+        <li>getAttribute(attr): to get the attribute value</li>
+        <li>setAttribute(attr,value):to set the attribute value</li>
+    </ul>
+    <h3>Style</h3>
+    <p class="para">Lorem, ipsum.</p>
+    <ul>
+        <li>node.style</li>
+    </ul>
+    <H3>Insert Elements: let el = document.createElement("div)</H3>
+    <ul>
+        <li>node.append(el):adds at the end of node(inside)</li>
+    <li>node.prepend(el):adds at the start of node(inside)</li>
+    <li>node.before(el):adds before te node(outside)</li>
+    <li>node.after(el):adds after the node(outside)</li>
+</ul>
+<h3>Delete Element</h3>
+<ul>
+    <li>node.remover():removes the node</li>
+</ul>
+<!-- Example for SET attributes -->
+<div id="box">Hello</div>
+<img src="Bhagwan.jpg" alt="Image" style="height: 200px; width: 300px;">
+<!-- Example for Create elements -->
+ <div id="new">This is a div
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>
+ </div>
+ <p class="newPara">I am a Paragraph</p>
+    <script src="first.js"></script>
+</body>
+</html>

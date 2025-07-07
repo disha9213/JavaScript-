@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Classes and Objects</h1>
+    <h2>Prototypes in JS</h2>
+    <ul>
+        <li>A JavaScript object is an entity having state and behaviour(properties and method)</li>
+        <li>JS objects have a special property called prototype.</li>
+        <li>We can set prototype using __proto__</li>
+    </ul>
+    <h2>Classes in JS</h2>
+    <ul>
+        <li>Class is a program-code template for creating objects</li>
+        <li>Those objects will have some state(variables) & some behaviour (functions) inside it</li>
+        <li>Syntax</li>
+        <pre>class myClass{
+               constructor(){...}
+               myMethod(){....}
+        }
+let myObj = new MyClass();
+        </pre>
+        <li>Constructor() method is:initializes object and automatically invoked by new</li>
+    </ul>
+   <h2>Inheritance</h2>
+   <ul>
+    <li>Inheritance is passing down properties & methods from parent class to child class</li>
+    <pre>class Parent{
+    }
+    class Child extends Parent{}
+    </pre>
+    <li style="color: red;">*If child and parent have same method ,childs method will be used  </li>
+   </ul>
+   <h2>super keyword</h2>
+   <ul>
+    <li>The super keyword is used t call the constructor of its parent class to access the parent's properties and methods</li>
+    super(args) //calls Parents Constructor
+    <br>
+    super.parentMethod(args)
+   </ul>
+   <h2>Error Handling</h2>
+   <li>error in a middle code will block the execution for the rest of the code therfore try and catch statement is used</li>
+   try-catch
+   <pre>try{
+    ....normal code
+}catch(err){  //err is error object
+    ....handling error
+}
+   </pre>
+    <script src="first.js"></script>
+</body>
+</html>

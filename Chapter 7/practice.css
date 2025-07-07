@@ -1,0 +1,11 @@
+.content{
+    color: red;
+   
+}
+.newClass{
+    background-color: aqua;
+    /* setting the class as new class throught command
+    para.setAttribute("class","newclass") 
+    and then
+    para.classList.add("content")*/
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-decoration: underline;">Events in JavaScript</h1>
+    <p class="content">The change in the sate of an object is known as an Event.
+        Events are fired to notify code of "interesting changes" that may affect code extension
+    </p>
+    <ul>
+        <li>Mouse events(click,double click ,etc)</li>
+        <li>Keyboard events(KeyPress,Keyup,KeyDown)</li>
+        <li>Form events(submit etc)</li>
+        <li>Print event & many more</li>
+      </ul>
+      <!-- Example for event -->
+       <button id="btn1" onclick="console.log('button was clicked');alert('Hello')">Click Me!</button>
+       <!-- JAVASCRIPT HAS MORE PRIORITY THAN INLINE STYLING -->
+        <button id="btn2" onclick="console.log('button was clicked')">Hello!</button>
+       <button  ondblclick="console.log('button was clicked twice');alert('Button is clicked twice')">Click Me twice!</button>
+       <div onmouseover="console.log('you inside the div')">This is a box</div>
+       <h3>Event Handling in JS</h3>
+       <pre>node.event=() =>{
+        //handle here
+    }
+       </pre>
+       <div id="newDiv">Hello, I am a div</div>
+       <H3>Event Object</H3>
+       <p>It is a special object that has details about the event.All event handlers have access to the event Object's properties and methods</p>
+       <pre>node.event=(e)=>{
+        //handle here}
+       </pre>
+       <h3>Event Listeners</h3>
+       <ul>
+        <li>Multiple work can be done from eventlisterner</li>
+        <li>Object can also be accessed in it</li>
+        <li>node.addEventListener(event,callback)</li>
+        <li>node.removeEventListerner(event,callback)</li>
+        <p>IMP=> the callack reference should be same to remove</p>
+       </ul>
+    <script src="practice.js"></script>
+    <!-- onclick= single click
+     ondblclick= on double click -->
+</body>
+</html>

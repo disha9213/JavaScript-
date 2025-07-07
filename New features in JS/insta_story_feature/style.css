@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    background-color: rgb(97, 152, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    height: 480px;
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid gray;
+    position: relative;
+}
+#stories{
+    height: 120px;
+    width: 100%;
+    /* background-color: burlywood; */
+    border-bottom: 1px solid #5f4d4d55;
+    padding: 15px;
+    white-space:nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#stories::-webkit-scrollbar{
+    display: none;  /*to diappear the scroll bar*/
+}
+.story{
+    /* background-color: blueviolet; */
+    border: 3px solid red;
+    height:90px ;
+    width:90px ;
+    border-radius: 50%;
+    overflow: hidden; /*the img will come into the circle only*/
+    display: inline-block; /*so that the circles come inside the block and also give the parent as property of white-space:nowrap; */
+    margin-right:5px ;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+#full_screen{
+    height: 100%;
+    width: 100%;
+    /* background-color:aqua; */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}

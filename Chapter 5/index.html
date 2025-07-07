@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+</head>
+<body>
+    <h1><u>Functions</u></h1>
+    <p>block of code that performs a specific task,can be invoked whenver needed</p>
+    <ul>
+        <li>
+            Function protects the code from redundancy (repetition)
+        </li>
+        <li>
+            function reduces the redundancy
+        </li>
+        <li>Function parameters are like <b>local variables of function</b> ->They have <b>block scope</b> means till where they are alive</li>
+    </ul>
+    <h2><u>Arrow Functions</u></h2>
+<p>Compact way of writing a function</p>
+<ul>
+    <li>Syntax</li>
+    <pre>const functionName= (para1,para2 ....)=>{
+        //do some work
+    }
+    </pre>
+    <li>They are part of modern javascript</li>
+    <li> <b>const arrowMul</b>=Storing the value of arrow function into a variable</li>
+    <li>Arrow functions are used for doing small work , less line of code</li>
+</ul>
+<h2><u>forEach Loop for arrays</u></h2>
+<ul>
+    <li>It is actually a function but it    get joined with the array to form a <b>METHOD</b></li>
+    <li>A <b>Callback</b> is a function passed as an argument to another function</li>
+    <li>It is used when we need to perform a work for every element of the array</li>
+</ul>
+<h4>Ques What are higher order function/Methods?</h4>
+<p>Uses another function as the parameter or return a function.<b>forEach loop is the higher order function.</b></p>
+<h1><u>Some More Array Methods</u></h1>
+<ul>
+    <b>1. Map</b>
+    <li>Creates a new array with the results of some operation. The value its callback returns are used to form new array</li>
+    <li><b><u>
+        forEach is used when need to do normally a calculation or to print something and MAP is used when we need to create a new array from values
+    </u></b></li>
+    <br>
+    <b>2. Filter</b>
+    <li>Creates a new array of the elements that give true for a condition/filter. <br>
+    Eg.all even elements 
+    </li>
+    <br>
+    <b>3. Reduce</b>
+    <li>Performs some operation & reduces the array to as single value. It returns that single value<br>
+    Eg. Sum of many numbers,average value</li>
+</ul>
+    <script src="first.js"></script>
+</body>
+</html> 

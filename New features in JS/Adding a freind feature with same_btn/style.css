@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113, 192, 244);
+}
+#card{ 
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+#card img{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+object-fit: cover;
+object-position:center;
+
+}
+#card h1{
+    margin: 10px 0  10px 0;
+    font-weight: 900;
+    /* font-size: 25px; */
+}
+#card h5{
+    font-size: 25px;
+    color: red;
+margin-bottom: 20px;
+/* cursor: pointer; */
+}
+#card button{
+    background-color:cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/* #card #remove{
+    background-color:cornsilk;
+    color: black;
+} */
+
+#emoji-overlay { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    display: none;           /*Initially hidden*/
+    overflow: hidden;
+}
+
+/* Emoji styling */
+.emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 2s ease-out forwards;
+}
+
+/* Floating animation */
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+    }
+}
